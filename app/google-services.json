@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "375976649834",
+    "firebase_url": "https://paintings-6a1d1.firebaseio.com",
+    "project_id": "paintings-6a1d1",
+    "storage_bucket": "paintings-6a1d1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:375976649834:android:2891a4ff768d25c4831613",
+        "android_client_info": {
+          "package_name": "com.practice.painting"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "375976649834-1l4u6b6t7nukl76koa7eljm2cimle3nt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.practice.painting",
+            "certificate_hash": "c0bf0c1de8e23a986c391ed68d4cba34ba7ac5dd"
+          }
+        },
+        {
+          "client_id": "375976649834-2u1dbpp0kjvkoofu8f4ph9oloemb12ol.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGQXhtQ9D2A9S1Qd0BeNdECzTP7sF0Smg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "375976649834-2u1dbpp0kjvkoofu8f4ph9oloemb12ol.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
