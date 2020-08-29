@@ -1,7 +1,17 @@
 package com.practice.painting
 
+import android.animation.Animator
+import android.animation.AnimatorSet
+import android.animation.ObjectAnimator
 import android.os.Bundle
+import android.view.FrameMetrics.ANIMATION_DURATION
 import androidx.appcompat.app.AppCompatActivity
+import com.practice.painting.bottomsheet.BottomSheetUtils
+import com.practice.painting.bottomsheet.ViewPagerBottomSheetBehavior
+import com.tamaskozmer.animateddashboard.CategoriesPagerAdapter
+import com.tamaskozmer.animateddashboard.data.DataProvider
+import kotlinx.android.synthetic.main.activity_pie_chart.*
+import kotlinx.android.synthetic.main.bottom_sheet.*
 
 class PieChart : AppCompatActivity() {
     private val dataProvider = DataProvider(this)

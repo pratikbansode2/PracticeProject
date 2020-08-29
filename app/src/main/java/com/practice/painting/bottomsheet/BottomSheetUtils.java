@@ -1,10 +1,11 @@
 package com.practice.painting.bottomsheet;
 
-import android.support.design.widget.CoordinatorLayout;
-import android.support.v4.view.ViewPager;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewParent;
+
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
+import androidx.viewpager.widget.ViewPager;
 
 public final class BottomSheetUtils {
 
@@ -39,7 +40,7 @@ public final class BottomSheetUtils {
         View current = view;
         while (current != null) {
             final ViewGroup.LayoutParams params = current.getLayoutParams();
-            if (params instanceof CoordinatorLayout.LayoutParams && ((CoordinatorLayout.LayoutParams) params).getBehavior() instanceof ViewPagerBottomSheetBehavior) {
+            if (params instanceof CoordinatorLayout.LayoutParams && ((CoordinatorLayout.LayoutParams) params).getBehavior() instanceof ViewPagerBottomSheetBehavior ) {
                 return current;
             }
             final ViewParent parent = current.getParent();
