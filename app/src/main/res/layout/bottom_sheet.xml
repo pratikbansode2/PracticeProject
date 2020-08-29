@@ -7,7 +7,7 @@
     android:orientation="vertical"
     app:behavior_hideable="true"
     app:behavior_peekHeight="200dp"
-    app:layout_behavior="com.tamaskozmer.animateddashboard.bottomsheet.ViewPagerBottomSheetBehavior">
+    app:layout_behavior="com.practice.painting.ViewPagerBottomSheetBehavior">
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/viewPager"
