@@ -6,7 +6,9 @@ import android.animation.ObjectAnimator
 import android.os.Bundle
 import android.view.FrameMetrics.ANIMATION_DURATION
 import android.view.View
+
 import android.widget.LinearLayout
+
 import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager.widget.ViewPager
 import com.practice.painting.bottomsheet.BottomSheetUtils
@@ -47,6 +49,8 @@ class PieChart : AppCompatActivity() {
     private fun initViewPager() {
         adapter = CategoriesPagerAdapter(supportFragmentManager, data)
         viewPager.adapter = adapter
+
+
 
         val circularViewPagerHandler = CircularViewPagerHandler(viewPager)
         viewPager.addOnPageChangeListener(circularViewPagerHandler)
@@ -174,7 +178,7 @@ class PieChart : AppCompatActivity() {
 
     override fun onBackPressed() {
         when {
-            bottomSheetBehavior.state == BottomSheetBehavior.STATE_EXPANDED -> {
+            bottomSheetBehavior.state == ViewPagerBottomSheetBehavior.STATE_EXPANDED -> {
                 adapter.getFragmentAtPosition(viewPager.currentItem)?.scrollToTop()
                 bottomSheetBehavior.state = ViewPagerBottomSheetBehavior.STATE_COLLAPSED
             }

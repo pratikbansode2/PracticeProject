@@ -2,6 +2,8 @@ package com.tamaskozmer.animateddashboard.data
 
 import android.content.Context
 import android.support.v4.content.ContextCompat
+import androidx.core.content.ContextCompat
+import com.practice.painting.R
 import com.tamaskozmer.animateddashboard.R
 
 class DataProvider(private val context: Context) {
