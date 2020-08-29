@@ -40,8 +40,8 @@ public final class BottomSheetUtils {
         View current = view;
         while (current != null) {
             final ViewGroup.LayoutParams params = current.getLayoutParams();
-            if (params instanceof CoordinatorLayout.LayoutParams && ((CoordinatorLayout.LayoutParams) params).getBehavior() instanceof ViewPagerBottomSheetBehavior ) {
-                return current;
+            if (params instanceof CoordinatorLayout.LayoutParams) {
+                ((CoordinatorLayout.LayoutParams) params).getBehavior();
             }
             final ViewParent parent = current.getParent();
             current = parent == null || !(parent instanceof View) ? null : (View) parent;
