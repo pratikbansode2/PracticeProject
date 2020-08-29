@@ -3,6 +3,8 @@ package com.tamaskozmer.animateddashboard
 import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentManager
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentManager
 import com.tamaskozmer.animateddashboard.data.Category
 import com.tobishiba.circularviewpager.library.BaseCircularViewPagerAdapter
 
