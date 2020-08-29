@@ -5,10 +5,14 @@ import android.animation.AnimatorSet
 import android.animation.ObjectAnimator
 import android.os.Bundle
 import android.view.FrameMetrics.ANIMATION_DURATION
+import android.view.View
+import android.widget.LinearLayout
 import androidx.appcompat.app.AppCompatActivity
+import androidx.viewpager.widget.ViewPager
 import com.practice.painting.bottomsheet.BottomSheetUtils
 import com.practice.painting.bottomsheet.ViewPagerBottomSheetBehavior
 import com.tamaskozmer.animateddashboard.CategoriesPagerAdapter
+import com.tamaskozmer.animateddashboard.data.Category
 import com.tamaskozmer.animateddashboard.data.DataProvider
 import kotlinx.android.synthetic.main.activity_pie_chart.*
 import kotlinx.android.synthetic.main.bottom_sheet.*
@@ -74,7 +78,7 @@ class PieChart : AppCompatActivity() {
 
     private fun initBottomSheet() {
         bottomSheetBehavior = ViewPagerBottomSheetBehavior.from(bottom_sheet)
-        BottomSheetUtils.setupViewPager(viewPager)
+        BottomSheetUtils.setupViewPager(viewPager as ViewPager?)
 
         bottomSheetBehavior.state = ViewPagerBottomSheetBehavior.STATE_HIDDEN
 
@@ -153,10 +157,10 @@ class PieChart : AppCompatActivity() {
 
     private fun createScaleAnimation(start: Float, end: Float): AnimatorSet {
         val scaleX = ObjectAnimator.ofFloat(pieChartView, "scaleX", start, end)
-            .setDuration(ANIMATION_DURATION)
+            .setDuration(ANIMATION_DURATION.toLong())
 
         val scaleY = ObjectAnimator.ofFloat(pieChartView, "scaleY", start, end)
-            .setDuration(ANIMATION_DURATION)
+            .setDuration(ANIMATION_DURATION.toLong())
 
         val animatorSet = AnimatorSet()
         animatorSet.playTogether(scaleX, scaleY)
@@ -165,7 +169,7 @@ class PieChart : AppCompatActivity() {
 
     private fun createTranslateAnimation(start: Float, end: Float): Animator {
         return ObjectAnimator.ofFloat(pieChartView, "translationY", start, end)
-            .setDuration(ANIMATION_DURATION)
+            .setDuration(ANIMATION_DURATION.toLong())
     }
 
     override fun onBackPressed() {
