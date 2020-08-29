@@ -1,3 +1,6 @@
 <resources>
-    <string name="app_name">Paintings</string>
+    <string name="app_name">Evaluation</string>
+    <string name="not_user_sign_up_here">Not User?Sign Up Here!!</string>
+
+
 </resources>
